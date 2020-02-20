@@ -1,0 +1,49 @@
+﻿
+# Infos :
+# - Ne pas mettre des noms de plus de 27 caractères.
+# - Mettre un élément par ligne.
+# - Mettre un # devant un élément de la liste le mettra en commentaire.
+# - Ne pas supprimer la première ligne de ce fichier.
+
+Lara Croft and Osiris
+Heave Ho
+Stickman fight
+Lethal League Blaze
+Battleblock Theater
+Cadillac and Dinosaurs
+The Lost Viking
+Orc must Dies 2
+Sunset Riders
+Destiny
+Left 4 dead 2
+Castle Crashers
+Trine 2
+Broforce
+Crawl
+Sonic All-Stars Racing
+Lovers in a Dangerous Spa.
+Deceit
+Gear Up
+We Were Here
+Haxball
+Aaaah !
+Curve Fever
+Realm of the Mad God
+Skribbl.io
+Use your words
+Krunker
+Minecraft
+Overcooked
+Rayman legend
+Starwhal
+Steep
+Subnautica
+Tabletop
+Tekken 7
+Terraria
+Toto temple deluxe
+Towerfall
+Tricky tower
+Ultimate chicken horse
+Fortnite
+Loup garou
