@@ -82,10 +82,10 @@ while loop :
             os.system("game.txt")
 
             all_game = []
-            f = open("game.txt", "r")
+            f = open("game.txt", "r", encoding="utf-8")
             all_game_brut = f.read().split("\n")
-            for i in range(len(all_game_brut)):
-                if all_game_brut[i] != "":
+            for i in range(1, len(all_game_brut)):
+                if not all_game_brut[i] == "":
                     if not all_game_brut[i].startswith("#") :
                         all_game.append(all_game_brut[i])
 
