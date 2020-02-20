@@ -14,8 +14,8 @@ except :
 all_game = []
 f = open("game.txt", "r", encoding="utf-8")
 all_game_brut = f.read().split("\n")
-for i in range(len(all_game_brut)):
-    if all_game_brut[i] != "":
+for i in range(1, len(all_game_brut)):
+    if not all_game_brut[i] == "":
         if not all_game_brut[i].startswith("#") :
             all_game.append(all_game_brut[i])
 width, height = 400, 400
@@ -33,6 +33,7 @@ def affiche(color, menu):
     screen.blit(back, (0,0))
     if menu != "non" :
         game = str(choice(all_game))
+        #print(game)
         text_draw(game, ((width//2)-len(game)*6 ,(height//2)-37), color, 25)
     screen.blit(front, (0,0))
     pygame.display.update()
@@ -40,8 +41,11 @@ def affiche(color, menu):
 def text_draw(text, position, color, size):
     '''affiche le texte demandé dans la couleur et la position choisie.'''
     myfont = pygame.font.SysFont('arial', size)
-    textsurface = myfont.render(text, True, color)
-    screen.blit(textsurface,position)
+    try :
+        textsurface = myfont.render(text, True, color)
+        screen.blit(textsurface,position)
+    except:
+        print("error")
 
 def choose():
     '''affichage rapide de tous les jeux de la liste fournie.'''
@@ -52,8 +56,9 @@ def choose():
 
 # Boucle de jeu
 click = False
+loop = True
 affiche((0,0,0), "non")
-while True :
+while loop :
     mx, my = pygame.mouse.get_pos()
 
     button_github = pygame.Rect(width//2-75, height-60, 300, 125)
@@ -87,11 +92,13 @@ while True :
     click = False
     for event in pygame.event.get():
         if event.type == QUIT :
-            pygame.quit()
-            quit()
+            loop = False
         if event.type == MOUSEBUTTONDOWN:
             if event.button == 1:
                 click = True
         if event.type == KEYDOWN :
             if event.key == K_SPACE :
                 choose()
+
+pygame.quit()
+quit()
