@@ -49,6 +49,10 @@ def text_draw(text, position, color, size):
 
 def choose():
     '''affichage rapide de tous les jeux de la liste fournie.'''
+    pygame.mixer.music.load("sound_roulette.mp3")
+    pygame.mixer.music.set_volume(1)
+    pygame.mixer.music.play(1)
+    time.sleep(0.1)
     for i in range(1,50):
         affiche((255,255,255), "oui")
         time.sleep(0.05*(i//10))
