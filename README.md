@@ -5,7 +5,7 @@ Programme reprenant le principe d'une roulette pour faire des choix sous pygame 
 
 # Comment l'utiliser ?
 
-Pour jouer, il vous faut avoir **Python** et **Pygame** sur votre machine. Pour installer Pygame, faites la commande suivante depuis le terminal :
+Pour utiliser le programme, il vous faut avoir **Python** et **Pygame** sur votre machine. Pour installer Pygame, faites la commande suivante depuis le terminal :
 > pip install pygame
 
 Vous pouvez modifier la liste des choix en cliquant sur **[Modifier la liste]**. Dans ce fichier texte, mettre un **#** au début d'une ligne la masquera au programme.
