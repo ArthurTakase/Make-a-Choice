@@ -25,7 +25,7 @@ front = pygame.image.load('front.png')
 # Initialisation Pygame
 pygame.init()
 pygame.font.init()
-pygame.display.set_caption('Choose a Game')
+pygame.display.set_caption('Make A Choice')
 screen = pygame.display.set_mode((width,height))
 
 def affiche(color, menu):
